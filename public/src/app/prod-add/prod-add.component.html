@@ -1,0 +1,10 @@
+<div class="prod-add-container">
+  <h2>Create a New Product</h2>
+  <form (submit)="onSubmitAdd()" class="addProductForm">
+    <h2><label>Title         <input type="text" name=newProduct.title [(ngModel)]="newProduct.title" /></label></h2>
+    <h2><label>Price         <input type="text" name=newProduct.price [(ngModel)]="newProduct.price" /></label></h2>
+    <h2><label>Image URL     <input type="text" name=newProduct.imageUrl [(ngModel)]="newProduct.imageUrl" /></label></h2>
+    <input type="submit" value="Submit" />
+    <p> {{ addResults.content }} </p>
+  </form>
+</div>

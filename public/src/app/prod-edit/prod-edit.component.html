@@ -1,0 +1,11 @@
+<div class="prod-edit-container">
+    <h2>Edit Product</h2>
+    <form (submit)="onSubmitEdit()" class="editProductForm">
+      <h2><label>Title         <input type="text" name=editProduct.title [(ngModel)]="editProduct.title" /></label></h2>
+      <h2><label>Price         <input type="text" name=editProduct.price [(ngModel)]="editProduct.price" /></label></h2>
+      <h2><label>Image URL     <input type="text" name=editProduct.imageUrl [(ngModel)]="editProduct.imageUrl" /></label></h2>
+      <button type="submit">Update</button>
+      <button (click)="delProduct(editProduct._id)">Delete</button>
+      <p> {{ editResults.content }} </p>
+    </form>
+</div>
